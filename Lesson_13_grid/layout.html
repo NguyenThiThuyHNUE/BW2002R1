@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item1 {
+        grid-area: mot;
+        background-color: brown;
+        height: 100px;
+    }
+    .item2 {
+        grid-area: hai;
+        background-color: burlywood;
+        height: 300px;
+    }
+    .item3 {
+        grid-area: ba;
+        background-color: chartreuse;
+        height: 300px;
+    }
+    .item4 {
+        grid-area: bon;
+        background-color: rgb(111, 0, 255);
+        height: 300px;
+    }
+    .item5 {
+        grid-area: nam;
+        background-color: rgb(255, 153, 0);
+        height: 200px;
+    }
+    .item6 {
+        grid-area: sau;
+        background-color: rgb(0, 225, 255);
+        height: 200px;
+    }
+    .item7 {
+        grid-area: bay;
+        background-color: rgb(255, 0, 170);
+        height: 200px;
+    }
+    .item8 {
+        grid-area: tam;
+        background-color: rgb(67, 77, 58);
+        height: 200px;
+    }
+    .item9 {
+        grid-area: chin;
+        background-color: rgb(255, 72, 0);
+        height: 100px;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'mot mot mot mot'
+        'hai ba ba bon'
+        'nam sau bay tam'
+        'chin chin chin chin';
+        gap: 10px;
+    }
+    .container > div {
+        border: 1px solid;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+</body>
+</html>
